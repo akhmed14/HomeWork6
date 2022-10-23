@@ -38,16 +38,16 @@ int[] StringToNum(string input)
 
         while (input [i] != ',')
         {
-        if(i != input.Length - 1)
-        {
-            temp += input [i].ToString();
-            i++;
-        }
-        else
-        {
-            temp += input [i].ToString();
-            break;
-        }
+            if(i != input.Length - 1)
+            {
+                temp += input [i].ToString();
+                i++;
+            }
+            else
+            {
+                temp += input [i].ToString();
+                break;
+            }
         }
         numbers[index] = Convert.ToInt32(temp);
         index++;
@@ -60,7 +60,7 @@ void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i] + ",");
+       Console.Write(array[i] + ",");
     }
 }
 
